@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric Squitieri</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav>
-            <ul>
+            <ul class="navigation">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
@@ -19,44 +21,46 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Hello, welcome to my website!</h1>
-        <p>My name is Eric Squitieri, a Computer Science major at the University of Central Florida.</p>
-        <img src="https://github.com/EricSqu/EricSqu.github.io/assets/140271387/df2dbb72-c263-4a0f-927e-8cc9973d9bde" alt="Eric Squitieri" style="width:100px;height:125px;border-radius:50%; float: right;">
-        
+    <main>
+        <section id="home" class="intro-section">
+            <h1>Hello, welcome to my website!</h1>
+            <p>My name is Eric Squitieri, a Computer Science major at the University of Central Florida.</p>
+            <img src="https://github.com/EricSqu/EricSqu.github.io/assets/140271387/df2dbb72-c263-4a0f-927e-8cc9973d9bde" alt="A photo of Eric Squitieri" class="profile-pic">
+        </section>
 
+        <section id="about" class="projects-section">
+            <h2>Simple Project to-do list</h2>
+            <ul>
+                <li>Project 1: Digital Clock</li>
+                <li>Project 2: To-do list app</li>
+                <li>Project 3: Expense tracker</li>
+                <li>Project 4....</li>
+            </ul>
+        </section>
 
-    </section>
+        <section id="portfolio" class="projects-section">
+            <h2>Intermediate projects</h2>
+            <ul>
+                <li>Project 1: Tetris</li>
+                <li>Project 2: Calculator</li>
+                <li>Project 3: Web scrapper</li>
+            </ul>
+        </section>
 
-    <section id="about">
-        <h2>Simple Project to do list...</h2>
-        <p>Project 1: Digital Clock</p>
-        <p>Project 2: To do list app</p>
-        <p>Project 3: Expense tracker</p>
-        <p>Project 4....</p>
-    </section>
+        <section id="blog" class="blog-section">
+            <h2>Blog/Articles</h2>
+            <p>Share your insights and expertise...</p>
+        </section>
 
-    <section id="portfolio">
-        <h2>Intermediate projects</h2>
-        <p>Project 1: Tetris</p>
-        <p>Project 2: Calculator</p>
-        <p>Project 3: Web scrapper</p>
-    </section>
-
-    <section id="blog">
-        <h2>Blog/Articles</h2>
-        <p>Share your insights and expertise...</p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>813-294-4193</p>
-        <p>Ericsquitieri1@gmail.com</p>
-        <p>5544 Century 21 blvd apt #164, Orlando FL, 32807</p>
-    </section>
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <p>For contact details, please reach out through the contact form.</p>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2023 Eric Squitieri</p>
     </footer>
 </body>
+
 </html>
