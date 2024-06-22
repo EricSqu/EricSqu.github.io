@@ -1,63 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Eric Squitieri  - UCF Computer Science Student</title>
+    <title>Your Name - Software Engineer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
     <header>
-        <h1>Eric Squitieri</h1>
-        <p>Computer Science Student at UCF</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#resume">Resume</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
+    <section id="home">
+        <h1>My name is... <span id="dynamic-text">Your Name</span></h1>
+        <p>and I am a <span id="dynamic-job">Software Engineer</span>.</p>
+        <button>Resume</button>
+        <button>Recent Projects</button>
+    </section>
     <section id="about">
         <h2>About Me</h2>
-        <p>I'm a passionate Computer Science student at UCF, with a keen interest in developing innovative solutions through coding and technology. My journey began in high school, where I discovered my interest taking an AP computer science class my senor year, leading me to pursue a degree focused on software development and data analysis</p>
-        <p>Beyond the classroom, I've honed my skills through internships, including a notable experience at SOFWERX, where I worked with an expert team to gain practical experience. My expertise spans languages like C and Java, and I'm particularly fascinated by the potential of AI and machine learning</p>
-        <p>Through my personal website, I share insights on my projects, from website development to robotics, aiming to connect with like-minded professionals and contribute to meaningful technological advancements.</p>
+        <p><!-- About me content --></p>
     </section>
-
-    <section id="portfolio">
-        <h2>Portfolio</h2>
-        <!-- Example Project -->
-        <div class="project">
-            <img src="path/to/your/project/image.jpg" alt="Project Name">
-            <h3>Project Name</h3>
-            <p>Short description of the project. What was it about? Which technologies did you use?</p>
-            <a href="link/to/github/repo">GitHub Repo</a>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <!-- Project cards -->
         </div>
-        <!-- Repeat similar blocks for other projects -->
     </section>
-
-    <section id="resume">
-        <h2>Resume</h2>
-        <p> <embed src="EricSquitieri-Resume.pdf" type="application/pdf" width="100%" height="600px" /></p>
-       
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-grid">
+            <!-- Experience cards -->
+        </div>
     </section>
-
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <!-- Skills icons -->
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-grid">
+            <!-- Education cards -->
+        </div>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>Email me at Ericsquitieri1@gmail.com or connect on <a href="https://www.linkedin.com/in/eric-squitieri-a1aa11223/">LinkedIn</a>.</p>
+        <form><!-- Contact form --></form>
     </section>
-
-    <footer>
-        <p>© 2023 Eric Squitieri. All rights reserved.</p>
-    </footer>
-
+    <script src="scripts.js"></script>
 </body>
-
 </html>
