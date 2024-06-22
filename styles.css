@@ -33,8 +33,15 @@ nav ul li a {
     padding: 100px 20px;
 }
 
-#dynamic-text, #dynamic-job {
+#dynamic-text {
     color: #ffdd59;
+}
+
+#dynamic-job {
+    color: #ffdd59;
+    border-right: 2px solid #ffdd59;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 section {
