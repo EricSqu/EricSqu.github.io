@@ -1,21 +1,31 @@
-const dynamicText = document.getElementById('dynamic-text');
 const dynamicJob = document.getElementById('dynamic-job');
 
-const texts = ["Your Name", "Aspiring Professional", "Tech Enthusiast"];
-const jobs = ["Software Engineer", "Developer", "Tech Enthusiast"];
+const titles = ["Software Engineer", "Computer Science Student", "Creator", "Web Developer"];
+let titleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
-let textIndex = 0;
-let jobIndex = 0;
-
-function changeText() {
-    dynamicText.textContent = texts[textIndex];
-    textIndex = (textIndex + 1) % texts.length;
+function type() {
+    const currentTitle = titles[titleIndex];
+    if (isDeleting) {
+        dynamicJob.textContent = currentTitle.substring(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+            isDeleting = false;
+            titleIndex = (titleIndex + 1) % titles.length;
+        }
+    } else {
+        dynamicJob.textContent = currentTitle.substring(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === currentTitle.length) {
+            isDeleting = true;
+            setTimeout(type, 2000); // Pause before deleting
+            return;
+        }
+    }
+    setTimeout(type, isDeleting ? 100 : 200);
 }
 
-function changeJob() {
-    dynamicJob.textContent = jobs[jobIndex];
-    jobIndex = (jobIndex + 1) % jobs.length;
-}
-
-setInterval(changeText, 3000);
-setInterval(changeJob, 3000);
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(type, 1000);
+});
