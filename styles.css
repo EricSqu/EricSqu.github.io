@@ -51,7 +51,7 @@ nav ul li a {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    transform: translate(-0.1em, -0.2em); /* Adjust the position using translate */
+    transform: translate(-0.1em, -1em); /* Adjust the position using translate */
     margin-left: 0.3em; /* Add a tiny space between "a" and the animated text */
 }
 
