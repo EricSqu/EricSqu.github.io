@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 #dynamic-job {
-    color: white; /* Set to white to match the left text */
+    color: #FFD700; /* Set to yellow to match the above text */
     font-size: 1em; /* Adjusted font size */
     font-weight: normal; /* Adjusted font weight */
     line-height: 1.5; /* Adjusted line height */
