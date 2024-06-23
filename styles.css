@@ -52,7 +52,7 @@ nav ul li a {
     overflow: hidden;
     display: inline-block;
     vertical-align: baseline; /* Ensure it matches the left text */
-    margin-left: 0.2em; /* Adjust margin to ensure perfect alignment */
+    margin-left: 0.3em; /* Add a tiny space between "a" and the animated text */
     margin-top: 0.2em; /* Move the text slightly down */
 }
 
