@@ -51,8 +51,9 @@ nav ul li a {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom; /* Ensure it matches the left text */
-    padding-left: 0.2em; /* Adjust padding to ensure perfect alignment */
+    vertical-align: baseline; /* Ensure it matches the left text */
+    padding-left: 0; /* Adjust padding to ensure perfect alignment */
+    margin-left: 0.2em; /* Adjust margin to ensure perfect alignment */
 }
 
 button {
@@ -86,4 +87,13 @@ h2 {
     padding: 20px;
     background-color: #3e3e5e;
     border-radius: 8px;
+}
+
+p {
+    font-size: 1em; /* Ensure it matches the left text */
+    font-weight: normal; /* Ensure it matches the left text */
+    line-height: 1.5; /* Ensure it matches the left text */
+    display: flex; /* Use flex to align items */
+    justify-content: center;
+    align-items: baseline;
 }
