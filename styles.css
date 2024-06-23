@@ -42,6 +42,7 @@ nav ul li a {
     border-right: 2px solid #ffdd59;
     white-space: nowrap;
     overflow: hidden;
+    display: inline-block;
 }
 
 section {
