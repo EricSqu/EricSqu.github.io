@@ -7,6 +7,7 @@ let isDeleting = false;
 
 function type() {
     const currentTitle = titles[titleIndex];
+    console.log('Typing:', currentTitle); // Add this line
     if (isDeleting) {
         dynamicJob.textContent = currentTitle.substring(0, charIndex - 1);
         charIndex--;
@@ -27,5 +28,6 @@ function type() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('Document loaded'); // Add this line
     setTimeout(type, 1000);
 });
