@@ -98,6 +98,11 @@ h2 {
 }
 
 .skills-grid i {
-    font-size: 3em; /* Adjust icon size */
+    font-size: 5em; /* Increase icon size */
     color: white;
+}
+
+.skills-grid img {
+    width: 80px; /* Increase size of image icons */
+    height: 80px; /* Increase size of image icons */
 }
