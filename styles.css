@@ -51,9 +51,9 @@ nav ul li a {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: baseline; /* Ensure it matches the left text */
+    vertical-align: middle; /* Adjust vertical alignment */
     margin-left: 0.3em; /* Add a tiny space between "a" and the animated text */
-    margin-top: 0.2em; /* Move the text slightly down */
+    margin-top: 0.3em; /* Move the text slightly down */
 }
 
 button {
@@ -105,4 +105,21 @@ h2 {
 .skills-grid img {
     width: 80px; /* Increase size of image icons */
     height: 80px; /* Increase size of image icons */
+    cursor: pointer; /* Change cursor to pointer for better UX */
+}
+
+/* Optional: Custom tooltip styling */
+.skills-grid i[title]:hover::after,
+.skills-grid img[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
 }
