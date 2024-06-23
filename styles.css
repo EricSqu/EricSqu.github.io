@@ -51,10 +51,8 @@ nav ul li a {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: middle; /* Adjust vertical alignment */
-    margin-left: 0.1em; /* Add a tiny space between "a" and the animated text */
-    margin-top: 0.25em; /* Slightly adjust the text position */
-    padding-left: 0.1em; /* Add padding to further adjust position */
+    transform: translate(-0.1em, -0.15em); /* Adjust the position using translate */
+    margin-left: 0.3em; /* Add a tiny space between "a" and the animated text */
 }
 
 button {
