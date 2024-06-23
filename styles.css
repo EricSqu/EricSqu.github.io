@@ -35,23 +35,24 @@ nav ul li a {
 
 #home h1 {
     margin: 0;
-    font-size: 2em; /* Adjusted font size */
+    font-size: 2em;
 }
 
 #dynamic-text {
-    color: #FFD700;
+    color: #ffdd59;
 }
 
 #dynamic-job {
-    color: #FFD700; /* Set to yellow to match the above text */
-    font-size: 1em; /* Adjusted font size */
-    font-weight: normal; /* Adjusted font weight */
-    line-height: 1.5; /* Adjusted line height */
-    border-right: 2px solid white; /* Adjusted border color to white */
+    color: white; /* Ensure it matches the left text */
+    font-size: 1em; /* Ensure it matches the left text */
+    font-weight: normal; /* Ensure it matches the left text */
+    line-height: 1.5; /* Ensure it matches the left text */
+    border-right: 2px solid white; /* Ensure it matches the left text */
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    vertical-align: bottom; /* Ensure alignment with the left text */
+    vertical-align: bottom; /* Ensure it matches the left text */
+    padding-left: 0.2em; /* Adjust padding to ensure perfect alignment */
 }
 
 button {
@@ -71,7 +72,7 @@ section {
 
 h2 {
     text-align: center;
-    font-size: 2em; /* Adjusted font size */
+    font-size: 2em;
 }
 
 .project-grid, .experience-grid, .skills-grid, .education-grid {
