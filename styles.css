@@ -35,21 +35,23 @@ nav ul li a {
 
 #home h1 {
     margin: 0;
-    font-size: 2.5em; /* Adjusted font size */
+    font-size: 2em; /* Adjusted font size */
 }
 
 #dynamic-text {
     color: #ffdd59;
-    font-size: 1em; /* Adjusted font size */
 }
 
 #dynamic-job {
-    color: #ffdd59;
+    color: white; /* Set to white to match the left text */
     font-size: 1em; /* Adjusted font size */
-    border-right: 2px solid #ffdd59;
+    font-weight: normal; /* Adjusted font weight */
+    line-height: 1.5; /* Adjusted line height */
+    border-right: 2px solid white; /* Adjusted border color to white */
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
+    vertical-align: bottom; /* Ensure alignment with the left text */
 }
 
 button {
