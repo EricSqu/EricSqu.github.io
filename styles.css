@@ -103,6 +103,12 @@ h2 {
     cursor: pointer; /* Change cursor to pointer for better UX */
 }
 
+/* Specific size adjustment for JavaScript icon */
+.skills-grid img[alt="JavaScript"] {
+    width: 80px; /* Set specific width for JS icon */
+    height: 80px; /* Set specific height for JS icon */
+}
+
 /* Optional: Custom tooltip styling */
 .skills-grid i[title]:hover::after,
 .skills-grid img[title]:hover::after {
