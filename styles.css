@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 #dynamic-text {
-    color: #ffdd59;
+    color: white;
 }
 
 #dynamic-job {
@@ -52,7 +52,7 @@ nav ul li a {
     overflow: hidden;
     display: inline-block;
     position: relative; /* Use relative positioning */
-    top: 0.2em; /* Adjust this value to move the text up or down */
+    top: 0.3em; /* Adjust this value to move the text up or down */
     margin-left: 0.3em; /* Add a tiny space between "a" and the animated text */
 }
 
