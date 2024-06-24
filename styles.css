@@ -97,52 +97,40 @@ h2 {
     padding: 20px;
 }
 
-.skill-card {
+.skills-grid .skill-container {
     width: 80px;
     height: 80px;
     perspective: 1000px;
 }
 
-.skill-card-inner {
-    position: relative;
+.skills-grid .skill-container .skill-card {
     width: 100%;
     height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
+    position: relative;
     transform-style: preserve-3d;
+    transition: transform 0.6s;
 }
 
-.skill-card:hover .skill-card-inner {
+.skills-grid .skill-container:hover .skill-card {
     transform: rotateY(180deg);
 }
 
-.skill-card-front, .skill-card-back {
+.skills-grid .skill-container .skill-card .front,
+.skills-grid .skill-container .skill-card .back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+}
+
+.skills-grid .skill-container .skill-card .back {
+    transform: rotateY(180deg);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
-}
-
-.skill-card-front {
-    background-color: #fff;
-    color: black;
-}
-
-.skill-card-back {
     background-color: #3e3e5e;
     color: white;
-    transform: rotateY(180deg);
-}
-
-.skills-grid img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    cursor: pointer;
+    font-size: 1em;
 }
 
 /* Optional: Custom tooltip styling */
