@@ -52,8 +52,8 @@ nav ul li a {
     overflow: hidden;
     display: inline-block;
     position: relative;
-    top: 0.5em;
-    margin-left: 0.3em;
+    top: 0.45em;
+    margin-left: 0.1em;
 }
 
 button {
