@@ -67,6 +67,10 @@ button {
     border-radius: 5px;
 }
 
+button:focus {
+    outline: none;
+}
+
 section {
     padding: 50px 20px;
 }
