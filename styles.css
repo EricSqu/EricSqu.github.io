@@ -54,7 +54,7 @@ nav ul li a {
 
 .home-image img { /* Added for responsive image styling */
     max-width: 100%;
-    max-height: 75%; /* Reduce height by 1/4 */
+    max-height: 300px; /* Set a specific maximum height */
     border-radius: 10px;
 }
 /* End of new styles for home-section layout */
