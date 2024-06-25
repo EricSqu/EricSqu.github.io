@@ -28,10 +28,35 @@ nav ul li a {
     text-decoration: none;
 }
 
-#home {
+/* Added new styles for home-section layout */
+.home-section {
     text-align: center;
     padding: 50px 20px;
 }
+
+.home-content { /* Added for flex container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust gap between text and image */
+}
+
+.home-text { /* Added for text content styling */
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-image { /* Added for image container styling */
+    flex: 1;
+    min-width: 300px;
+}
+
+.home-image img { /* Added for responsive image styling */
+    max-width: 100%;
+    border-radius: 10px;
+}
+/* End of new styles for home-section layout */
 
 #home h1 {
     margin: 0;
@@ -43,17 +68,17 @@ nav ul li a {
 }
 
 #dynamic-job {
-    color: white; /* Ensure it matches the left text */
-    font-size: 1em; /* Ensure it matches the left text */
-    font-weight: normal; /* Ensure it matches the left text */
-    line-height: 1.5; /* Ensure it matches the left text */
-    border-right: 2px solid white; /* Ensure it matches the left text */
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    border-right: 2px solid white;
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    position: relative; /* Use relative positioning */
-    top: 0.34em; /* Adjust this value to move the text up or down */
-    margin-left: 0.05em; /* Add a tiny space between "a" and the animated text */
+    position: relative;
+    top: 0.38em;
+    margin-left: 0.05em;
 }
 
 button {
@@ -97,23 +122,21 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px; /* Adjust gap between icons */
+    gap: 20px;
     padding: 20px;
 }
 
 .skills-grid img {
-    width: 80px; /* Increase size of image icons */
-    height: 80px; /* Increase size of image icons */
-    cursor: pointer; /* Change cursor to pointer for better UX */
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }
 
-/* Specific size adjustment for JavaScript icon */
 .skills-grid img[alt="JavaScript"] {
-    width: 80px; /* Set specific width for JS icon */
-    height: 80px; /* Set specific height for JS icon */
+    width: 80px;
+    height: 80px;
 }
 
-/* Optional: Custom tooltip styling */
 .skills-grid i[title]:hover::after,
 .skills-grid img[title]:hover::after {
     content: attr(title);
@@ -129,7 +152,6 @@ h2 {
     z-index: 10;
 }
 
-/* New class for centering text in About Me section */
 .center-text {
     text-align: center;
 }
@@ -138,7 +160,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 600px; /* Adjust the width as needed */
+    max-width: 600px;
 }
 
 .hidden {
