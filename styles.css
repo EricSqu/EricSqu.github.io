@@ -154,6 +154,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .center-text h2, .center-text h4, .center-text p {
@@ -161,4 +162,5 @@ h2 {
     margin-right: auto;
     display: block;
     max-width: 600px;
+    text-align: center;
 }
