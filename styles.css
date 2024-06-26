@@ -133,16 +133,16 @@ h2 {
 }
 
 .skills-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
     padding: 20px;
 }
 
 .skills-grid img {
-    width: 80px;
-    height: 80px;
+    width: 80px; /* Set appropriate width */
+    height: 80px; /* Set appropriate height */
     cursor: pointer;
 }
 
@@ -209,17 +209,4 @@ h2 {
     100% {
         opacity: 1;
     }
-}
-
-/* Center the About Me section and Skills icons */
-#about, .skills-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.skills-grid img {
-    width: 80px; /* Set appropriate width */
-    height: 80px; /* Set appropriate height */
 }
