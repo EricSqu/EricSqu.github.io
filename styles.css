@@ -37,7 +37,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; /* Make items stack vertically */
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -48,9 +48,9 @@ nav ul li a {
 }
 
 .home-image {
-    flex: 0 1 300px;
-    align-self: flex-end; /* Align image to the right */
-    margin-left: auto; /* Move image to the right */
+    flex: 0 1 auto;
+    max-width: 300px;
+    margin-left: 20px;
 }
 
 .home-image img {
@@ -72,6 +72,10 @@ nav ul li a {
 #dynamic-job {
     font-size: 2em; /* Make dynamic text the size of h2 */
     font-weight: bold; /* Optional: match the boldness of h2 */
+}
+
+.buttons {
+    margin-top: 20px;
 }
 
 button {
@@ -125,46 +129,4 @@ h2 {
     cursor: pointer;
 }
 
-.skills-grid img[alt="JavaScript"] {
-    width: 80px;
-    height: 80px;
-}
-
-.skills-grid i[title]:hover::after,
-.skills-grid img[title]:hover::after {
-    content: attr(title);
-    position: absolute;
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 10;
-}
-
-.center-text {
-    text-align: center;
-}
-
-.center-text h2, .center-text h4, .center-text p {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 600px;
-}
-
-.hidden {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
-}
-
-.show {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
-}
+.skills-grid img[alt="JavaSc
