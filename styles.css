@@ -34,25 +34,27 @@ nav ul li a {
     padding: 50px 20px;
 }
 
-.home-content { /* Added for flex container */
+.home-content {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: row-reverse; /* Adjust direction if necessary */
     gap: 20px; /* Adjust gap between text and image */
+    max-width: 1200px; /* Maximum width for the content to avoid stretching */
+    margin: 0 auto; /* Center the content within the section */
 }
 
-.home-text { /* Added for text content styling */
+.home-text {
     flex: 1;
     min-width: 300px;
 }
 
-.home-image { /* Added for image container styling */
+.home-image {
     flex: 1;
     min-width: 300px;
 }
 
-.home-image img { /* Added for responsive image styling */
+.home-image img {
     max-width: 100%;
     max-height: 300px; /* Set a specific maximum height */
     border-radius: 10px;
