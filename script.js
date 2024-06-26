@@ -1,13 +1,12 @@
 const dynamicJob = document.getElementById('dynamic-job');
 
-const titles = ["Software Engineer", "Computer Science Student", "Creator", "Web Developer"];
+const titles = ["and I am a Software Engineer", "and I am a Computer Science Student", "and I am a Creator", "and I am a Web Developer"];
 let titleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
 function type() {
     const currentTitle = titles[titleIndex];
-    console.log('Typing:', currentTitle); // Add this line
     if (isDeleting) {
         dynamicJob.textContent = currentTitle.substring(0, charIndex - 1);
         charIndex--;
@@ -28,7 +27,6 @@ function type() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Document loaded'); // Add this line
     setTimeout(type, 1000);
 
     const observer = new IntersectionObserver((entries) => {
