@@ -29,12 +29,24 @@ nav ul li a {
 }
 
 .home-section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 50px 20px;
-    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    flex-wrap: wrap;
+    overflow: hidden; /* Add overflow hidden to clip overflow content */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Place overlay above background but below content */
 }
 
 .home-content {
@@ -44,20 +56,21 @@ nav ul li a {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    flex-wrap: wrap;
+    z-index: 2; /* Place content above overlay */
 }
 
 .home-text {
     flex: 1;
     text-align: center;
-    max-width: 600px; /* Ensure text container doesn't get too wide */
+    max-width: 600px;
 }
 
 .home-image {
     flex: 0 1 auto;
     max-width: 300px;
     margin-left: 20px;
-    align-self: center; /* Align image to the center */
+    align-self: center;
 }
 
 .home-image img {
@@ -72,13 +85,10 @@ nav ul li a {
     font-size: 2em;
 }
 
-#dynamic-text {
-    color: white;
-}
-
 #dynamic-job {
-    font-size: 2em; /* Make dynamic text the size of h2 */
-    font-weight: bold; /* Optional: match the boldness of h2 */
+    font-size: 2em;
+    font-weight: bold;
+    color: #FFFDD0; /* Ensure it stands out */
 }
 
 .buttons {
@@ -109,69 +119,6 @@ h2 {
     font-size: 2em;
 }
 
-.project-grid, .experience-grid, .skills-grid, .education-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.project-grid div, .experience-grid div, .skills-grid div, .education-grid div {
-    margin: 10px;
-    padding: 20px;
-    background-color: #3e3e5e;
-    border-radius: 8px;
-}
-
-.skills-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-.skills-grid img {
-    width: 80px;
-    height: 80px;
-    cursor: pointer;
-}
-
-.skills-grid img[alt="JavaScript"] {
-    width: 80px;
-    height: 80px;
-}
-
-.skills-grid i[title]:hover::after,
-.skills-grid img[title]:hover::after {
-    content: attr(title);
-    position: absolute;
-    background: #333;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    top: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    white-space: nowrap;
-    z-index: 10;
-}
-
-.center-text {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.center-text h2, .center-text h4, .center-text p {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 600px;
-    text-align: center;
-}
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -183,4 +130,20 @@ h2 {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+.animate-text {
+    animation: text-flicker-in-glow 2s ease-in both;
+}
+
+@keyframes text-flicker-in-glow {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
