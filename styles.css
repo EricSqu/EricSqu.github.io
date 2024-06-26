@@ -119,6 +119,69 @@ h2 {
     font-size: 2em;
 }
 
+.project-grid, .experience-grid, .skills-grid, .education-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-grid div, .experience-grid div, .skills-grid div, .education-grid div {
+    margin: 10px;
+    padding: 20px;
+    background-color: #3e3e5e;
+    border-radius: 8px;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.skills-grid img {
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.skills-grid img[alt="JavaScript"] {
+    width: 80px;
+    height: 80px;
+}
+
+.skills-grid i[title]:hover::after,
+.skills-grid img[title]:hover::after {
+    content: attr(title);
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.center-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-text h2, .center-text h4, .center-text p {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 600px;
+    text-align: center;
+}
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -146,4 +209,17 @@ h2 {
     100% {
         opacity: 1;
     }
+}
+
+/* Center the About Me section and Skills icons */
+#about, .skills-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-grid img {
+    width: 80px; /* Set appropriate width */
+    height: 80px; /* Set appropriate height */
 }
