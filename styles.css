@@ -28,7 +28,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Added new styles for home-section layout */
 .home-section {
     text-align: center;
     padding: 50px 20px;
@@ -38,29 +37,29 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row-reverse; /* Adjust direction if necessary */
+    flex-wrap: nowrap;
     gap: 20px; /* Adjust gap between text and image */
     max-width: 1200px; /* Maximum width for the content to avoid stretching */
     margin: 0 auto; /* Center the content within the section */
+    flex-direction: row-reverse; /* Ensure the image is on the right */
 }
 
 .home-text {
     flex: 1;
     min-width: 300px;
+    text-align: left; /* Ensure text alignment is to the left */
 }
 
 .home-image {
-    flex: 1;
-    min-width: 300px;
+    flex: 0 1 300px;
 }
 
 .home-image img {
     max-width: 100%;
     max-height: 300px; /* Set a specific maximum height */
     border-radius: 10px;
-    border: 3px solid white; /* Adds a border remove it if I dont like */
+    border: 3px solid white; /* Add a border */
 }
-/* End of new styles for home-section layout */
 
 #home h1 {
     margin: 0;
@@ -90,7 +89,7 @@ button {
     padding: 10px 20px;
     font-size: 1em;
     border: none;
-    background-color: #ffdd59;
+    background-color: #FFFDD0; /* Change button color to cream */
     color: #2c2c54;
     cursor: pointer;
     border-radius: 5px;
