@@ -71,16 +71,8 @@ nav ul li a {
 }
 
 #dynamic-job {
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
-    line-height: 1.5;
-    border-right: 2px solid white;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    
+    font-size: 2em; /* Adjust the font-size as needed */
+    font-weight: bold; /* Optional: match the boldness of h2 */
 }
 
 button {
