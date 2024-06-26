@@ -37,7 +37,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column; /* Make items stack vertically */
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -49,6 +49,8 @@ nav ul li a {
 
 .home-image {
     flex: 0 1 300px;
+    align-self: flex-end; /* Align image to the right */
+    margin-left: auto; /* Move image to the right */
 }
 
 .home-image img {
@@ -68,16 +70,6 @@ nav ul li a {
 }
 
 #dynamic-job {
-    font-size: 1em;
-    font-weight: normal;
-    line-height: 1.5;
-    border-right: 2px solid white;
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    position: relative;
-    top: 0.38em;
-    margin-left: 0.05em;
     font-size: 2em; /* Make dynamic text the size of h2 */
     font-weight: bold; /* Optional: match the boldness of h2 */
 }
