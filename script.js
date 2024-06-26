@@ -19,15 +19,15 @@ function type() {
         charIndex++;
         if (charIndex === currentTitle.length) {
             isDeleting = true;
-            setTimeout(type, 1000); // Pause before deleting (shortened pause time)
+            setTimeout(type, 1000);
             return;
         }
     }
-    setTimeout(type, isDeleting ? 50 : 100); // Faster typing and deleting speed
+    setTimeout(type, isDeleting ? 50 : 100);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setTimeout(type, 500); // Start typing sooner
+    setTimeout(type, 500);
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
