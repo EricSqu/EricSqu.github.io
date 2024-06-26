@@ -29,8 +29,12 @@ nav ul li a {
 }
 
 .home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 50px 20px;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .home-content {
@@ -40,17 +44,20 @@ nav ul li a {
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
 }
 
 .home-text {
     flex: 1;
     text-align: center;
+    max-width: 600px; /* Ensure text container doesn't get too wide */
 }
 
 .home-image {
     flex: 0 1 auto;
     max-width: 300px;
     margin-left: 20px;
+    align-self: center; /* Align image to the center */
 }
 
 .home-image img {
