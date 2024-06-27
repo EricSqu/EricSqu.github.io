@@ -52,7 +52,7 @@ function openModal(element) {
     let projectId = element.getAttribute('data-project');
     let projectInfo = getProjectInfo(projectId);
     modalTitle.textContent = projectInfo.title;
-    modalDescription.textContent = projectInfo.description;
+    modalDescription.innerHTML = projectInfo.description; // Use innerHTML to support HTML content
     modal.style.display = "block";
 }
 
@@ -70,9 +70,20 @@ function getProjectInfo(projectId) {
     const projects = {
         simplec: {
             title: "SimpleC",
-            description: "My very own (simple) C compiler I built that can handle complex pointers, loops, and much more!"
+            description: `
+                <p>My very own (simple) C compiler I built that can handle complex pointers, loops, and much more!</p>
+                <p>This project was a significant undertaking and involved creating a compiler that could parse and understand various C constructs. It involved:</p>
+                <ul>
+                    <li>Implementing a lexer and parser using Flex and Bison</li>
+                    <li>Constructing an Abstract Syntax Tree (AST)</li>
+                    <li>Performing semantic analysis</li>
+                    <li>Generating intermediate code</li>
+                    <li>Optimizing code for performance</li>
+                </ul>
+                <p>The project taught me a great deal about compiler construction and deepened my understanding of the C language and its intricacies.</p>
+            `
         },
-        // Add more projects here
+        // Add more projects here with detailed descriptions
     };
     return projects[projectId];
 }
