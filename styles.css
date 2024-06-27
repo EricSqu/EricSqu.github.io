@@ -93,6 +93,7 @@ nav ul li a {
     min-height: 1.5em; /* Adjust this value to the approximate height of your text */
     line-height: 2em; /* Increase line height for more space */
     padding: 10px 0; /* Add padding for extra space */
+    height: 2em; /* Ensure a fixed height */
 }
 
 .buttons {
