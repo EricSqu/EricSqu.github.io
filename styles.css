@@ -98,7 +98,7 @@ nav ul li a {
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 10px; /* Reduced margin-top to bring buttons closer to dynamic text */
 }
 
 button {
