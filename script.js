@@ -42,3 +42,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 });
+
+// Modal functionality
+const modal = document.getElementById("modal");
+const modalTitle = document.getElementById("modal-title");
+const modalDescription = document.getElementById("modal-description");
+
+function openModal(element) {
+    let projectId = element.getAttribute('data-project');
+    let projectInfo = getProjectInfo(projectId);
+    modalTitle.textContent = projectInfo.title;
+    modalDescription.textContent = projectInfo.description;
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+function getProjectInfo(projectId) {
+    const projects = {
+        simplec: {
+            title: "SimpleC",
+            description: "My very own (simple) C compiler I built that can handle complex pointers, loops, and much more!"
+        },
+        // Add more projects here
+    };
+    return projects[projectId];
+}
