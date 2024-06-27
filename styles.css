@@ -80,7 +80,7 @@ nav ul li a {
     border: 3px solid white;
 }
 
-#home h1, #home h2 {
+#home h1 {
     margin: 0;
     font-size: 2em;
 }
@@ -94,6 +94,7 @@ nav ul li a {
     line-height: 2em; /* Increase line height for more space */
     padding: 10px 0; /* Add padding for extra space */
     height: 2em; /* Ensure a fixed height */
+    white-space: pre; /* Preserve spaces */
 }
 
 .buttons {
