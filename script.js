@@ -8,7 +8,7 @@ let isDeleting = false;
 function type() {
     const currentTitle = jobTitles[titleIndex];
     if (isDeleting) {
-        dynamicJob.textContent = currentTitle.substring(0, charIndex - 1);
+        dynamicJob.textContent = currentTitle.substring(0, charIndex - 1) || '\u200B';
         charIndex--;
         if (charIndex === 0) {
             isDeleting = false;
