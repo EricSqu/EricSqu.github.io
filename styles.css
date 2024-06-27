@@ -92,13 +92,13 @@ nav ul li a {
     display: inline-block; /* Keep inline-block for consistent spacing */
     min-height: 1.5em; /* Adjust this value to the approximate height of your text */
     line-height: 2em; /* Increase line height for more space */
-    padding: 10px 0; /* Add padding for extra space */
+    padding: 5px 0; /* Reduced padding for extra space */
     height: 2em; /* Ensure a fixed height */
     white-space: pre; /* Preserve spaces */
 }
 
 .buttons {
-    margin-top: 10px; /* Reduced margin-top to bring buttons closer to dynamic text */
+    margin-top: 5px; /* Further reduced margin-top to bring buttons closer to dynamic text */
 }
 
 button {
