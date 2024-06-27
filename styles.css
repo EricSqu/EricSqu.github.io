@@ -80,16 +80,9 @@ nav ul li a {
     border: 3px solid white;
 }
 
-#home h1 {
+#home h1, #home h2 {
     margin: 0;
     font-size: 2em;
-}
-
-.dynamic-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 2em; /* Set this to the approximate height of the text */
 }
 
 #dynamic-job {
@@ -97,6 +90,9 @@ nav ul li a {
     font-weight: bold;
     color: #FFFDD0; /* Ensure it stands out */
     display: inline-block; /* Keep inline-block for consistent spacing */
+    min-height: 1.5em; /* Adjust this value to the approximate height of your text */
+    line-height: 2em; /* Increase line height for more space */
+    padding: 10px 0; /* Add padding for extra space */
 }
 
 .buttons {
