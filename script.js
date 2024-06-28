@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
-    
+
     // Open projects button event listener
     document.getElementById('open-projects-button').addEventListener('click', () => {
         const projectsSection = document.getElementById('projects');
@@ -57,10 +57,16 @@ const modalDescription = document.getElementById("modal-description");
 
 function openModal(element) {
     let projectId = element.getAttribute('data-project');
+    console.log('Opening modal for project:', projectId); // Debug log
     let projectInfo = getProjectInfo(projectId);
-    modalTitle.textContent = projectInfo.title;
-    modalDescription.innerHTML = projectInfo.description; // Use innerHTML to support HTML content
-    modal.style.display = "block";
+    console.log('Project info:', projectInfo); // Debug log
+    if (projectInfo) {
+        modalTitle.textContent = projectInfo.title;
+        modalDescription.innerHTML = projectInfo.description; // Use innerHTML to support HTML content
+        modal.style.display = "block";
+    } else {
+        console.error('No project info found for:', projectId); // Error log
+    }
 }
 
 function closeModal() {
