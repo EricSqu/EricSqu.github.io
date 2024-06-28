@@ -41,6 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
+    
+    // Open projects button event listener
+    document.getElementById('open-projects-button').addEventListener('click', () => {
+        const projectsSection = document.getElementById('projects');
+        projectsSection.scrollIntoView({ behavior: 'smooth' });
+        projectsSection.classList.add('show');
+    });
 });
 
 // Modal functionality
