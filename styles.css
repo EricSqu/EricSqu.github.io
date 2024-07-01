@@ -272,6 +272,7 @@ h2 {
 
 .modal-content {
     background-color: #fefefe;
+    color: #000; /* Ensure the text color is visible */
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -292,4 +293,9 @@ h2 {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+/* Ensure text is visible in the modal */
+#modal-title, #modal-description {
+    color: #000; /* Set text color to black for better visibility */
 }
