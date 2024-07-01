@@ -29,6 +29,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
 }
+
 nav ul li.right {
     margin-left: auto; /* Push the GitHub link to the far right */
 }
@@ -214,6 +215,7 @@ h2 {
     z-index: 10;
 }
 
+/* Center text styles */
 .center-text {
     text-align: center;
     display: flex;
