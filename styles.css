@@ -16,7 +16,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Change to space-between to position items at the ends */
+    justify-content: center; /* Center all items */
     margin: 0;
     padding: 0;
 }
@@ -28,10 +28,6 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-}
-
-nav ul li.right {
-    margin-left: auto; /* Push the GitHub link to the far right */
 }
 
 .home-section {
