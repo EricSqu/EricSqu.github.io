@@ -16,7 +16,7 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between; /* Change to space-between to position items at the ends */
+    justify-content: center; /* Change to space-between to position items at the ends */
     margin: 0;
     padding: 0;
 }
