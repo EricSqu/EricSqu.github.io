@@ -96,6 +96,18 @@ function getProjectInfo(projectId) {
                 <p>The project taught me a great deal about compiler construction and deepened my understanding of the C language and its intricacies.</p>
             `
         },
+        newproject: {
+            title: "New Project",
+            description: `
+                <p>This is a description of a new project that will be detailed later.</p>
+                <p>Details about the new project will go here. You can edit this section to include specific information about your project.</p>
+                <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                </ul>
+            `
+        },
         // Add more projects here with detailed descriptions
     };
     return projects[projectId];
