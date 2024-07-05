@@ -1,4 +1,4 @@
-/* Add to styles.css */
+
 
 body {
     font-family: Arial, sans-serif;
@@ -301,6 +301,40 @@ h2 {
     color: #000; /* Set text color to black for better visibility */
 }
 
+
+/* Start of experience style */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.experience-card {
+    background-color: #3e3e5e;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.experience-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.experience-card p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.experience-card ul {
+    margin: 10px 0 0 20px;
+    color: #ddd;
+}
+/*End of experience style*/
+
+
+
 /* Styles for the education section */
 .education-card {
     background-color: #4A148C; /* Card background color */
@@ -360,4 +394,4 @@ h2 {
     transform: rotate(180deg); /* Rotate the button when open */
 }
 
-
+/* End of education style */
