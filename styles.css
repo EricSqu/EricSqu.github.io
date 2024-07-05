@@ -301,8 +301,6 @@ h2 {
     color: #000; /* Set text color to black for better visibility */
 }
 
-/* Add to styles.css */
-
 /* Styles for the education section */
 .education-card {
     background-color: #4A148C; /* Card background color */
@@ -361,4 +359,5 @@ h2 {
 .education-card.open .dropdown-btn {
     transform: rotate(180deg); /* Rotate the button when open */
 }
+
 
