@@ -300,3 +300,65 @@ h2 {
 #modal-title, #modal-description {
     color: #000; /* Set text color to black for better visibility */
 }
+
+/* Add to styles.css */
+
+/* Styles for the education section */
+.education-card {
+    background-color: #4A148C; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+}
+
+.education-header img {
+    max-width: 60px; /* Adjust as necessary */
+    margin-right: 20px;
+}
+
+.education-header div {
+    flex-grow: 1;
+}
+
+.education-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.education-header p {
+    margin: 5px 0 0 0;
+    color: #ddd;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.education-content {
+    display: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.education-card.open .education-content {
+    display: block;
+}
+
+.education-card.open .dropdown-btn {
+    transform: rotate(180deg); /* Rotate the button when open */
+}
+
