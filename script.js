@@ -111,5 +111,13 @@ function getProjectInfo(projectId) {
         },
         // Add more projects here with detailed descriptions
     };
+    
     return projects[projectId];
 }
+
+
+
+function toggleDropdown(element) {
+    element.classList.toggle('open');
+}
+
