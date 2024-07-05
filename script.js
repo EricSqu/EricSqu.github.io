@@ -116,8 +116,8 @@ function getProjectInfo(projectId) {
 }
 
 
-
 function toggleDropdown(element) {
-    element.classList.toggle('open');
+    const card = element.closest('.education-card');
+    card.classList.toggle('open');
 }
 
