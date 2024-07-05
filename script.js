@@ -97,14 +97,15 @@ function getProjectInfo(projectId) {
             `
         },
         newproject: {
-            title: "New Project",
+            title: "Personal Website",
             description: `
-                <p>This is a description of a new project that will be detailed later.</p>
-                <p>Details about the new project will go here. You can edit this section to include specific information about your project.</p>
+                <p>Built using HTML, CSS, and JavaScript, it features a responsive design, dynamic content, and smooth animations. It serves as a central hub for my online presence, allowing visitors to learn more about me and my work</p>
+                <p>The website is designed to provide a comprehensive overview of my professional journey and technical capabilities. Key features include:</p>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
+                    <li><strong>Responsive Design:</strong> Ensures optimal viewing experience across a wide range of devices, from desktop computers to mobile phones.</li>
+                    <li><strong>Dynamic Job Title Animation:</strong> A rotating job title animation that highlights my various roles and expertise.</li>
+                    <li><strong>Interactive Project Modals:</strong> Detailed descriptions of each project are displayed in interactive modals, enhancing user engagement.</li>
+                    <li><strong>Smooth Animations:</strong> CSS animations and transitions create a visually appealing and interactive user experience.</li>
                 </ul>
             `
         },
