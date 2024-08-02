@@ -114,6 +114,10 @@ function getProjectInfo(projectId) {
     
     return projects[projectId];
 }
+function toggleExperience(element) {
+    const card = element.closest('.experience-card');
+    card.classList.toggle('open');
+}
 
 
 function toggleDropdown(element) {
