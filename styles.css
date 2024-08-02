@@ -303,34 +303,34 @@ h2 {
 
 
 /* Start of experience style */
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
-}
-
 .experience-card {
     background-color: #3e3e5e;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 10px; /* Add some space between cards */
 }
 
-.experience-card h3 {
-    margin-top: 0;
-    font-size: 1.5em;
+.experience-card h3, .experience-card p {
+    margin: 0;
+    color: #fff;
 }
 
-.experience-card p {
-    font-size: 1em;
-    color: #ccc;
-}
-
-.experience-card ul {
-    margin: 10px 0 0 20px;
+.experience-content {
+    display: none;
+    margin-top: 20px;
     color: #ddd;
 }
+
+.experience-card.open .experience-content {
+    display: block;
+}
+
+.experience-card.open {
+    background-color: #564a7c; /* Slightly lighter color when open */
+}
+
 /*End of experience style*/
 
 
