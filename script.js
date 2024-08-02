@@ -1,6 +1,6 @@
 const dynamicJob = document.getElementById('dynamic-job');
 
-const jobTitles = ["Software Engineer", "Computer Science Student", "Creator", "Web Developer"];
+const jobTitles = ["Software Engineer", "Computer Science Student", "Web Developer"];
 let titleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
