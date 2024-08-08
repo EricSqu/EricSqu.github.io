@@ -312,14 +312,29 @@ h2 {
 }
 
 /* Experience Card Styles */
+/* Experience Grid */
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px; /* Ensure it doesn't stretch too wide */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Experience Card Styles */
 .experience-card {
     background-color: #3e3e5e;
     padding: 20px;
     border-radius: 8px;
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    margin: 0; /* Remove margin as the gap will be handled by the grid */
-    position: relative;
+    box-sizing: border-box; /* Ensure padding doesn't affect the size */
+    min-height: 200px; /* Set a minimum height */
+    border: 2px solid #564a7c; /* Add a border to visually separate the cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .experience-card:hover {
@@ -339,6 +354,7 @@ h2 {
 
 .experience-card.open .experience-content {
     display: block;
+    margin-top: 20px;
 }
 
 .experience-card.open {
@@ -361,6 +377,7 @@ h2 {
     content: "Click to collapse";
     opacity: 0.6;
 }
+
 
 /*End of experience style*/
 
