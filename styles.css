@@ -303,19 +303,27 @@ h2 {
 
 
 /* Start of experience style */
-/* Experience Styles */
+/* Experience Grid */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Experience Card Styles */
 .experience-card {
     background-color: #3e3e5e;
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for hover effect */
+    transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    margin: 10px; /* Add margin to separate cards */
-    position: relative; /* For pseudo-element positioning */
+    margin: 0; /* Remove margin as the gap will be handled by the grid */
+    position: relative;
 }
 
 .experience-card:hover {
-    transform: scale(1.05); /* Hover effect */
+    transform: scale(1.05);
 }
 
 .experience-card h3, .experience-card p {
@@ -334,10 +342,10 @@ h2 {
 }
 
 .experience-card.open {
-    background-color: #564a7c; /* Slightly lighter color when open */
+    background-color: #564a7c;
 }
 
-/* Add call-to-action indicator */
+/* Call-to-action indicator */
 .experience-card::after {
     content: "Click to expand";
     position: absolute;
@@ -351,9 +359,8 @@ h2 {
 
 .experience-card.open::after {
     content: "Click to collapse";
-    opacity: 0.6; /* Change opacity instead of rotating or changing content */
+    opacity: 0.6;
 }
-
 
 /*End of experience style*/
 
