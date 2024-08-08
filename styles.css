@@ -303,14 +303,19 @@ h2 {
 
 
 /* Start of experience style */
+/* Experience Styles */
 .experience-card {
     background-color: #3e3e5e;
     padding: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Added transition for hover effect */
     cursor: pointer;
     margin: 10px; /* Add margin to separate cards */
     position: relative; /* For pseudo-element positioning */
+}
+
+.experience-card:hover {
+    transform: scale(1.05); /* Hover effect */
 }
 
 .experience-card h3, .experience-card p {
@@ -334,21 +339,21 @@ h2 {
 
 /* Add call-to-action indicator */
 .experience-card::after {
-    content: "+ Click to expand";
+    content: "Click to expand";
     position: absolute;
     bottom: 10px;
     right: 10px;
     font-size: 0.8em;
     color: #ccc;
-    transition: transform 0.3s ease;
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
 
 .experience-card.open::after {
-    content: "- Click to collapse";
-    transform: rotate(180deg);
-    bottom: 10px;
-    right: 10px;
+    content: "Click to collapse";
+    opacity: 0.6; /* Change opacity instead of rotating or changing content */
 }
+
 
 /*End of experience style*/
 
