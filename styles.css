@@ -303,44 +303,43 @@ h2 {
 
 
 /* Start of experience style */
-/* Experience Grid */
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px;
+#experience {
+    background-color: #2C0751;
+    padding: 50px 20px;
+    color: white;
 }
 
-/* Experience Card Styles */
 /* Experience Grid */
 .experience-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible layout */
     gap: 20px;
-    padding: 20px;
-    max-width: 1200px; /* Ensure it doesn't stretch too wide */
+    max-width: 1200px;
     margin: 0 auto; /* Center the grid */
+    padding: 20px;
 }
 
 /* Experience Card Styles */
 .experience-card {
     background-color: #3e3e5e;
-    padding: 20px;
     border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid #564a7c; /* Add a border to visually separate the cards */
     transition: transform 0.3s ease, background-color 0.3s ease;
     cursor: pointer;
-    box-sizing: border-box; /* Ensure padding doesn't affect the size */
-    min-height: 200px; /* Set a minimum height */
-    border: 2px solid #564a7c; /* Add a border to visually separate the cards */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    min-height: 200px; /* Set a minimum height */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
 .experience-card:hover {
     transform: scale(1.05);
 }
 
+/* For cards with expandable content */
 .experience-card h3, .experience-card p {
     margin: 0;
     color: #fff;
@@ -361,7 +360,7 @@ h2 {
     background-color: #564a7c;
 }
 
-/* Call-to-action indicator */
+/* Call-to-action indicator for expandable cards */
 .experience-card::after {
     content: "Click to expand";
     position: absolute;
@@ -378,6 +377,45 @@ h2 {
     opacity: 0.6;
 }
 
+/* Content Styling for General Cards */
+.experience-content {
+    padding: 20px;
+}
+
+.experience-content h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #FFFDD0;
+}
+
+.experience-content p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.experience-content ul {
+    list-style-type: disc;
+    margin: 10px 0 0 20px;
+    padding: 0;
+    color: #ddd;
+}
+
+.experience-content ul li {
+    margin-bottom: 5px;
+}
+
+/* For Cards with Media Content (e.g., Freelance Developer) */
+.experience-image {
+    width: 100%;
+    height: 200px;
+    background-color: #000; /* Placeholder background */
+}
+
+.experience-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /*End of experience style*/
 
