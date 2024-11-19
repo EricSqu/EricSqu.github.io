@@ -85,7 +85,6 @@ function getProjectInfo(projectId) {
             title: "SimpleC",
             description: `
                 <p>My very own (simple) C compiler I built that can handle complex pointers, loops, and much more!</p>
-                <p>This project was a significant undertaking and involved creating a compiler that could parse and understand various C constructs. It involved:</p>
                 <ul>
                     <li>Implementing a lexer and parser using Flex and Bison</li>
                     <li>Constructing an Abstract Syntax Tree (AST)</li>
@@ -93,27 +92,48 @@ function getProjectInfo(projectId) {
                     <li>Generating intermediate code</li>
                     <li>Optimizing code for performance</li>
                 </ul>
-                <p>The project taught me a great deal about compiler construction and deepened my understanding of the C language and its intricacies.</p>
             `
         },
         newproject: {
             title: "Personal Website",
             description: `
-                <p>Built using HTML, CSS, and JavaScript, it features a responsive design, dynamic content, and smooth animations. It serves as a central hub for my online presence, allowing visitors to learn more about me and my work</p>
-                <p>The website is designed to provide a comprehensive overview of my professional journey and technical capabilities. Key features include:</p>
+                <p>Built using HTML, CSS, and JavaScript, it features a responsive design, dynamic content, and smooth animations.</p>
                 <ul>
-                    <li><strong>Responsive Design:</strong> Ensures optimal viewing experience across a wide range of devices, from desktop computers to mobile phones.</li>
-                    <li><strong>Dynamic Job Title Animation:</strong> A rotating job title animation that highlights my various roles and expertise.</li>
-                    <li><strong>Interactive Project Modals:</strong> Detailed descriptions of each project are displayed in interactive modals, enhancing user engagement.</li>
-                    <li><strong>Smooth Animations:</strong> CSS animations and transitions create a visually appealing and interactive user experience.</li>
+                    <li>Responsive Design</li>
+                    <li>Dynamic Job Title Animation</li>
+                    <li>Interactive Project Modals</li>
+                    <li>Smooth Animations</li>
                 </ul>
             `
         },
-        // Add more projects here with detailed descriptions
+        contactManager: {
+            title: "Full Stack Contact Manager",
+            description: `
+                <p>Engineered a fully responsive website with a 100% accessibility score, optimized for seamless performance across devices using HTML, CSS, and JavaScript.</p>
+                <ul>
+                    <li>Implemented dynamic content and smooth animations to enhance user engagement.</li>
+                    <li>Developed the full-stack architecture on Digital Ocean using the LAMP stack.</li>
+                    <li>Integrated REST API for robust back-end functionality.</li>
+                </ul>
+            `
+        },
+        onion: {
+            title: "Onion",
+            description: `
+                <p>A MERN stack website that turns your ingredients into culinary masterpieces.</p>
+                <ul>
+                    <li>Users can sign up, log in, and recover passwords using the Brevo API.</li>
+                    <li>Dynamic recipe suggestions based on ingredients in your pantry.</li>
+                    <li>Customizable options based on allergens, food preferences, and dietary needs.</li>
+                    <li>Interactive profile page for personalization.</li>
+                </ul>
+            `
+        }
     };
-    
+
     return projects[projectId];
 }
+
 function toggleExperience(element) {
     const card = element.closest('.experience-card');
     card.classList.toggle('open');
