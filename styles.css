@@ -416,6 +416,15 @@ h2 {
     height: 100%;
     object-fit: cover;
 }
+/* Only Apply Expandable Behavior to Cards with the 'expandable' Class */
+.experience-card.expandable .experience-content {
+    display: none; /* Hide expandable content by default */
+}
+
+.experience-card.expandable.open .experience-content {
+    display: block; /* Show content when card is expanded */
+}
+
 
 /*End of experience style*/
 
