@@ -482,13 +482,25 @@ h2 {
     color: #fff;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
+/* For the email input */
+.contact-form input[type="email"] {
+    width: 100%; /* Full width of the container */
     padding: 10px;
     border: none;
     border-radius: 5px;
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-sizing: border-box;
+    height: 40px; /* Set a specific height for the email input */
+    resize: none; /* No resizing needed for the input */
+}
+/* For the message textarea */
+.contact-form textarea {
+    width: 100%; /* Full width of the container */
+    height: 150px; /* Fixed height for the message textarea */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: none; /* Prevent resizing */
 }
 
 .contact-form button {
