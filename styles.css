@@ -303,24 +303,32 @@ h2 {
 
 
 /* Start of experience style */
-/* General Styling for Experience Section */
-#experience {
-    background-color: #2C0751;
-    padding: 50px 20px;
-    color: white;
+/* Experience Grid */
+.experience-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ensures equal spacing */
+    gap: 20px; /* Add spacing between cards */
 }
 
-/* Experience Card Styling */
+/* Experience Card */
 .experience-card {
     background-color: #3e3e5e;
     border-radius: 8px;
-    margin: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, height 0.3s ease;
+    flex: 1; /* Ensure all cards have the same width */
+    max-height: 200px; /* Default height */
+    position: relative; /* Ensure dropdown content is positioned correctly */
 }
 
-.experience-card .experience-header {
+.experience-card.open {
+    max-height: none; /* Allow card to expand */
+}
+
+/* Experience Header */
+.experience-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -328,29 +336,27 @@ h2 {
     cursor: pointer;
 }
 
-.experience-header h3 {
-    margin: 0;
-    font-size: 1.5em;
-    color: #FFFDD0;
+.experience-header div {
+    flex-grow: 1;
 }
 
+.experience-header h3,
 .experience-header p {
     margin: 0;
-    font-size: 0.9em;
-    color: #ddd;
+    color: #ffffff;
 }
 
 .dropdown-btn {
     background: none;
     border: none;
-    color: #fff;
+    color: white;
     font-size: 1.5em;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
 .experience-card.open .dropdown-btn {
-    transform: rotate(180deg); /* Rotate the arrow when open */
+    transform: rotate(180deg);
 }
 
 /* Hidden Content */
@@ -359,6 +365,7 @@ h2 {
     padding: 20px;
     background-color: #564a7c;
     color: white;
+    overflow: auto; /* Allow scroll if content overflows */
 }
 
 .experience-card.open .experience-content {
@@ -367,12 +374,8 @@ h2 {
 
 .experience-content ul {
     list-style-type: disc;
-    margin-left: 20px;
-    color: #ddd;
-}
-
-.experience-content ul li {
-    margin-bottom: 10px;
+    margin: 0;
+    padding-left: 20px;
 }
 
 /* Video Styling */
