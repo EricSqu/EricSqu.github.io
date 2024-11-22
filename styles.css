@@ -303,126 +303,84 @@ h2 {
 
 
 /* Start of experience style */
+/* General Styling for Experience Section */
 #experience {
     background-color: #2C0751;
     padding: 50px 20px;
     color: white;
 }
 
-/* Experience Grid */
-.experience-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible layout */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the grid */
-    padding: 20px;
-}
-
-/* Experience Card Styles */
+/* Experience Card Styling */
 .experience-card {
     background-color: #3e3e5e;
     border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    padding: 20px;
-    border: 2px solid #564a7c; /* Add a border to visually separate the cards */
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.experience-card .experience-header {
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    min-height: 200px; /* Set a minimum height */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-}
-
-.experience-card:hover {
-    transform: scale(1.05);
-}
-
-/* For cards with expandable content */
-.experience-card h3, .experience-card p {
-    margin: 0;
-    color: #fff;
-}
-
-.experience-content {
-    display: block;
-    margin-top: 20px;
-    color: #ddd;
-}
-
-.experience-card.open .experience-content {
-    display: block;
-    margin-top: 20px;
-}
-
-.experience-card.open {
-    background-color: #564a7c;
-}
-
-/* Call-to-action indicator for expandable cards */
-.experience-card::after {
-    content: "Click to expand";
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    font-size: 0.8em;
-    color: #ccc;
-    transition: opacity 0.3s ease;
-    opacity: 1;
-}
-
-.experience-card.open::after {
-    content: "Click to collapse";
-    opacity: 0.6;
-}
-
-/* Content Styling for General Cards */
-.experience-content {
+    align-items: center;
     padding: 20px;
+    cursor: pointer;
 }
 
-.experience-content h3 {
-    margin: 0 0 10px;
+.experience-header h3 {
+    margin: 0;
     font-size: 1.5em;
     color: #FFFDD0;
 }
 
-.experience-content p {
-    margin: 5px 0;
+.experience-header p {
+    margin: 0;
+    font-size: 0.9em;
     color: #ddd;
+}
+
+.dropdown-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.experience-card.open .dropdown-btn {
+    transform: rotate(180deg); /* Rotate the arrow when open */
+}
+
+/* Hidden Content */
+.experience-content {
+    display: none;
+    padding: 20px;
+    background-color: #564a7c;
+    color: white;
+}
+
+.experience-card.open .experience-content {
+    display: block;
 }
 
 .experience-content ul {
     list-style-type: disc;
-    margin: 10px 0 0 20px;
-    padding: 0;
+    margin-left: 20px;
     color: #ddd;
 }
 
 .experience-content ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-/* For Cards with Media Content (e.g., Freelance Developer) */
-.experience-image {
-    width: 100%;
-    height: 200px;
-    background-color: #000; /* Placeholder background */
-}
-
+/* Video Styling */
 .experience-image video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-/* Only Apply Expandable Behavior to Cards with the 'expandable' Class */
-.experience-card.expandable .experience-content {
-    display: none; /* Hide expandable content by default */
-}
-
-.experience-card.expandable.open .experience-content {
-    display: block; /* Show content when card is expanded */
+    max-height: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
 
 
